@@ -181,7 +181,7 @@
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
-                                        <state key="normal" title="Log in lkjowjdakjdalksjdalksjdlaskjda ankur">
+                                        <state key="normal" title="Log in">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -190,6 +190,9 @@
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a username and password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyJ-VF-WGi">
                                         <rect key="frame" x="20" y="487" width="374" height="13.5"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Button">
+                                            <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                        </accessibility>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
                                         <color key="textColor" red="0.089136499339999994" green="0.37802625309999999" blue="0.76424870469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -199,12 +202,18 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not a U.S. Bank customer?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88G-bC-rUx">
                                                 <rect key="frame" x="0.5" y="0.0" width="151.5" height="14.5"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Button">
+                                                    <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                                </accessibility>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                                 <color key="textColor" red="0.074678482310141195" green="0.080991492381634833" blue="0.3651635362694301" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore loans, cards &amp; more" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWj-Oy-ac7">
                                                 <rect key="frame" x="2.5" y="22.5" width="147" height="13.5"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Button">
+                                                    <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                                </accessibility>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
                                                 <color key="textColor" red="0.089136499339999994" green="0.37802625309999999" blue="0.76424870469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -216,6 +225,9 @@
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tour the app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ra5-02-bIX">
                                         <rect key="frame" x="174" y="669.5" width="66.5" height="13.5"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Button">
+                                            <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                        </accessibility>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
                                         <color key="textColor" red="0.089136499339999994" green="0.37802625309999999" blue="0.76424870469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -228,6 +240,7 @@
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wt9-Kp-I9F">
                                         <rect key="frame" x="20" y="326" width="51" height="31"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Remember me"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="49" id="BPa-qZ-Vhf"/>
                                             <constraint firstAttribute="height" constant="31" id="hSt-DZ-Yb7"/>
@@ -249,9 +262,9 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="mWQ-8o-kAq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uSU-xa-yLJ" secondAttribute="trailing" constant="50" id="4E6-QM-98P"/>
                                     <constraint firstItem="vyJ-VF-WGi" firstAttribute="leading" secondItem="Zgb-pi-ovF" secondAttribute="leading" id="4is-tv-ogN"/>
                                     <constraint firstItem="8de-lR-GTe" firstAttribute="top" secondItem="vyJ-VF-WGi" secondAttribute="bottom" constant="33" id="5CD-Mr-3Hu"/>
+                                    <constraint firstItem="uSU-xa-yLJ" firstAttribute="centerY" secondItem="mWQ-8o-kAq" secondAttribute="centerY" id="5ZW-DR-ptm"/>
                                     <constraint firstItem="utc-IP-d7Z" firstAttribute="top" secondItem="ADq-Q9-9wL" secondAttribute="bottom" constant="6" id="GKe-mB-Gxv"/>
                                     <constraint firstItem="utc-IP-d7Z" firstAttribute="leading" secondItem="KCR-gY-AmC" secondAttribute="leading" id="GXH-py-NCI"/>
                                     <constraint firstItem="y0K-Ol-59b" firstAttribute="top" secondItem="KCR-gY-AmC" secondAttribute="bottom" constant="6" id="HSs-c8-rPa"/>
@@ -263,13 +276,11 @@
                                     <constraint firstItem="y0K-Ol-59b" firstAttribute="leading" secondItem="Wt9-Kp-I9F" secondAttribute="leading" id="PjJ-YZ-wRP"/>
                                     <constraint firstItem="4I9-rl-Zfs" firstAttribute="trailing" secondItem="XTs-lv-pYA" secondAttribute="trailing" id="PvE-ja-Aot"/>
                                     <constraint firstItem="uSU-xa-yLJ" firstAttribute="top" secondItem="y0K-Ol-59b" secondAttribute="bottom" constant="37" id="RXo-dV-Vsa"/>
-                                    <constraint firstAttribute="trailing" secondItem="mWQ-8o-kAq" secondAttribute="trailing" constant="20" id="RpC-eZ-o4o"/>
                                     <constraint firstItem="ra5-02-bIX" firstAttribute="top" secondItem="8de-lR-GTe" secondAttribute="bottom" constant="100" id="SQN-A3-aiY"/>
                                     <constraint firstItem="XTs-lv-pYA" firstAttribute="trailing" secondItem="EQh-bU-UaR" secondAttribute="trailing" id="Ss5-gz-iGw"/>
                                     <constraint firstItem="XTs-lv-pYA" firstAttribute="leading" secondItem="A1x-pK-AhZ" secondAttribute="leading" constant="20" id="T3h-kF-0Zl"/>
                                     <constraint firstItem="utc-IP-d7Z" firstAttribute="trailing" secondItem="KCR-gY-AmC" secondAttribute="trailing" id="XK3-tG-aMn"/>
                                     <constraint firstItem="vyJ-VF-WGi" firstAttribute="trailing" secondItem="Zgb-pi-ovF" secondAttribute="trailing" id="XqN-re-ah9"/>
-                                    <constraint firstItem="mWQ-8o-kAq" firstAttribute="trailing" secondItem="Zgb-pi-ovF" secondAttribute="trailing" id="XrF-Sy-1di"/>
                                     <constraint firstItem="Zgb-pi-ovF" firstAttribute="centerX" secondItem="vyJ-VF-WGi" secondAttribute="centerX" id="Zqd-wa-cfa"/>
                                     <constraint firstItem="Zgb-pi-ovF" firstAttribute="leading" secondItem="XTs-lv-pYA" secondAttribute="leading" id="b9v-bl-VwS"/>
                                     <constraint firstItem="ADq-Q9-9wL" firstAttribute="leading" secondItem="utc-IP-d7Z" secondAttribute="leading" id="c1Z-NK-ozJ"/>
@@ -280,7 +291,7 @@
                                     <constraint firstItem="Zgb-pi-ovF" firstAttribute="trailing" secondItem="utc-IP-d7Z" secondAttribute="trailing" id="ko4-Ah-DDa"/>
                                     <constraint firstItem="KCR-gY-AmC" firstAttribute="top" secondItem="utc-IP-d7Z" secondAttribute="bottom" constant="33" id="lZL-7M-o7u"/>
                                     <constraint firstItem="vyJ-VF-WGi" firstAttribute="top" secondItem="Zgb-pi-ovF" secondAttribute="bottom" constant="27" id="ntP-PE-lcG"/>
-                                    <constraint firstItem="mWQ-8o-kAq" firstAttribute="top" secondItem="y0K-Ol-59b" secondAttribute="bottom" constant="37" id="oe1-0c-9v3"/>
+                                    <constraint firstAttribute="trailing" secondItem="mWQ-8o-kAq" secondAttribute="trailing" constant="20" id="oP2-w1-1Nc"/>
                                     <constraint firstItem="ADq-Q9-9wL" firstAttribute="trailing" secondItem="utc-IP-d7Z" secondAttribute="trailing" id="osh-1Z-7EL"/>
                                     <constraint firstItem="uSU-xa-yLJ" firstAttribute="leading" secondItem="Wt9-Kp-I9F" secondAttribute="trailing" constant="8" id="q1f-PD-Qb8"/>
                                     <constraint firstItem="XTs-lv-pYA" firstAttribute="centerX" secondItem="A1x-pK-AhZ" secondAttribute="centerX" id="rEU-Tf-Sby"/>
@@ -289,6 +300,7 @@
                                     <constraint firstAttribute="trailing" secondItem="4I9-rl-Zfs" secondAttribute="trailing" constant="20" id="tZR-gF-lQj"/>
                                     <constraint firstItem="EQh-bU-UaR" firstAttribute="leading" secondItem="ADq-Q9-9wL" secondAttribute="leading" id="tfC-1W-Nhp"/>
                                     <constraint firstItem="4I9-rl-Zfs" firstAttribute="top" secondItem="A1x-pK-AhZ" secondAttribute="topMargin" id="tv3-X2-w6E"/>
+                                    <constraint firstItem="mWQ-8o-kAq" firstAttribute="leading" secondItem="uSU-xa-yLJ" secondAttribute="trailing" constant="172.5" id="uEL-B5-cqB"/>
                                     <constraint firstItem="XTs-lv-pYA" firstAttribute="leading" secondItem="EQh-bU-UaR" secondAttribute="leading" id="xpc-FB-TIi"/>
                                     <constraint firstItem="8de-lR-GTe" firstAttribute="centerX" secondItem="ra5-02-bIX" secondAttribute="centerX" id="zmd-h5-dVU"/>
                                 </constraints>
